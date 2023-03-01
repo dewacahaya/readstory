@@ -15,9 +15,7 @@ export default function TopBar() {
 
     <div className="top">
         <div className="topLeft">
-        <Link className="link" to="/">
         <img className="topLogo" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="" />
-        </Link>
         </div>
 
         <div className="topCenter">
@@ -26,7 +24,7 @@ export default function TopBar() {
                     <Link className="link" to="/">HOME</Link>
                 </li>
                 <li className="topListItem">
-                    ABOUT
+                   -
                 </li> 
                 <li className="topListItem">
                     <Link className="link" to="/write">WRITE</Link>
