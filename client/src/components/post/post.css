@@ -46,11 +46,12 @@
   font-style: italic;
   font-size: 13px;
   color: #999;
+  margin: 5px;
   margin-top: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 9;
+  -webkit-line-clamp: 14;
   -webkit-box-orient: vertical;
 }
 

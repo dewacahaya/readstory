@@ -146,6 +146,28 @@ export default function Write() {
                     />
                     <label htmlFor="Science Fiction">Science Fiction</label>
                 </div>
+                <div className="categories">
+                    <input
+                    type="radio"
+                    checked={categories === "Action"}
+                    name="categories"
+                    value="Action"
+                    id="Action"
+                    onChange={(e) => setCats(e.target.value)}
+                    />
+                    <label htmlFor="Action">Action</label>
+                </div>
+                <div className="categories">
+                    <input
+                    type="radio"
+                    checked={categories === "Sci-Fi"}
+                    name="categories"
+                    value="Sci-Fi"
+                    id="Sci-Fi"
+                    onChange={(e) => setCats(e.target.value)}
+                    />
+                    <label htmlFor="Sci-Fi">Sci-Fi</label>
+                </div>
             </div>
 
             </div>
