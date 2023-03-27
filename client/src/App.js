@@ -16,7 +16,7 @@ function App() {
       <TopBar />
       <Switch>
         <Route exact path="/">
-          <Home />
+        {user ? <Home /> : <Login />}
         </Route>
         <Route path="/register">{user ? <Home /> : <Register />}</Route>
         <Route path="/login">{user ? <Home /> : <Login />}</Route>

@@ -15,7 +15,7 @@ export default function TopBar() {
 
     <div className="top">
         <div className="topLeft">
-        <img className="topLogo" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="" />
+        <img className="topLogo" src="https://cdn.discordapp.com/attachments/911528122480988182/1080418181790826546/Dark_Pink_and_Dark_Cyan__Typographic_and_Modern__Bookshop_Brand_Logo-transformed.png" alt="" />
         </div>
 
         <div className="topCenter">
@@ -24,7 +24,7 @@ export default function TopBar() {
                     <Link className="link" to="/">HOME</Link>
                 </li>
                 <li className="topListItem">
-                   -
+                   <img className="topImg2" src="https://cdn2.iconfinder.com/data/icons/buno-ui-interface/32/_-39-256.png" alt="" />
                 </li> 
                 <li className="topListItem">
                     <Link className="link" to="/write">WRITE</Link>
