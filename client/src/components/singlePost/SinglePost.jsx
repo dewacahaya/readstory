@@ -47,8 +47,7 @@ export default function SinglePost() {
       setUpdateMode(false)
     }catch(err){}
   };
-
-  console.log(post.username === user.username)
+  
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
