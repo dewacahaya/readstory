@@ -10,7 +10,6 @@ export default function Setting() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [success, setSuccess] = useState(false)
-
   const {user, dispatch} = useContext(Context)
   const PF = "http://localhost:5000/images/"
 
@@ -63,8 +62,7 @@ export default function Setting() {
                 />
             </div>
                 <label>Username</label>
-                <input type="text" placeholder={user.username} 
-                onChange={e=>setUsername(e.target.value)}/>
+                <p>{user.username}</p>
                 <label>Email</label>
                 <input type="email" placeholder={user.email}
                 onChange={e=>setEmail(e.target.value)}/>

@@ -20,7 +20,7 @@ export default function SinglePost() {
   useEffect(()=>{
     const getPost = async ()=>{
       const res = await axios.get("/posts/"+path);
-      setPost(res.data);
+      setPost(res.data)
       setTitle(res.data.title)
       setCats(res.data.categories)
       setDesc(res.data.desc)

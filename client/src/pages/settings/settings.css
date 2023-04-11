@@ -70,6 +70,14 @@
   border-bottom: 2px solid lightgray;
 }
 
+.settingForm > p {
+  color: gray;
+  margin: 10px 0;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid lightgray;
+}
+
 .settingSubmit {
   width: 150px;
   margin-top: 20px;

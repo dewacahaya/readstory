@@ -2,6 +2,7 @@ import { useContext, useState } from "react"
 import "./write.css"
 import axios from "axios";
 import { Context } from "../../context/Context";
+<script src="https://cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
 
 export default function Write() {
 
@@ -172,7 +173,7 @@ export default function Write() {
 
             </div>
             <div className="writeFormGroup">
-                <textarea placeholder="write your imajination, share your experience" type="text" className="writeInput writeText"
+                <textarea placeholder="write your imajination, share your experience" name="desc" type="text" className="writeInput writeText"
                 onChange={e => setDesc(e.target.value)}>
                 </textarea>
             </div>

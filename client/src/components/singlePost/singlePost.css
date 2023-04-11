@@ -74,6 +74,7 @@
   font-size: 18px;
   text-align: justify;
   margin-right: 15px;
+  white-space: break-spaces;
 }
 
 .singlePostStory::first-letter {
@@ -88,6 +89,7 @@
   font-size: 18px;
   text-align: justify;
   line-height: 25px;
+  height: 500px;
 }
 
 .singlePostDescInput:focus {
