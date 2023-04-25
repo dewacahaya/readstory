@@ -6,7 +6,6 @@ import axios from "axios"
 
 export default function Setting() {
   const [file, setFile] = useState(null)
-  const [username, setUsername] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [success, setSuccess] = useState(false)
@@ -18,7 +17,6 @@ export default function Setting() {
     dispatch({type:"UPDATE_START"})
     const updatedUser = {
         userId: user._id,
-        username,
         email,
         password,
     };
