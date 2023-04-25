@@ -12,6 +12,16 @@ export default function Setting() {
   const {user, dispatch} = useContext(Context)
   const PF = "http://localhost:5000/images/"
 
+  
+const handleDelete = async () => {
+  try {
+    await axios.delete(`/users/${user._id}`, {data :{userId:user._id}
+  });
+    dispatch({type: "LOGOUT"})
+    window.location.replace("/");
+  }catch(err){}
+};
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     dispatch({type:"UPDATE_START"})
@@ -46,7 +56,7 @@ export default function Setting() {
       <div className="settingWrapper">
         <div className="settingTitle">
             <span className="settingUpdateTitle">Update Your Account</span>
-            <span className="settingDeleteTitle">Delete Account</span>
+            <span className="settingDeleteTitle" onClick={handleDelete}>Delete Account</span>
         </div>
         <form className="settingForm" onSubmit={handleSubmit}>
             <label>Profile Picture</label>
