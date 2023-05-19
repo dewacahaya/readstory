@@ -161,13 +161,13 @@ export default function Write() {
                 <div className="categories">
                     <input
                     type="radio"
-                    checked={categories === "Sci-Fi"}
+                    checked={categories === "Mecha"}
                     name="categories"
-                    value="Sci-Fi"
-                    id="Sci-Fi"
+                    value="Mecha"
+                    id="Mecha"
                     onChange={(e) => setCats(e.target.value)}
                     />
-                    <label htmlFor="Sci-Fi">Sci-Fi</label>
+                    <label htmlFor="Mecha">Mecha</label>
                 </div>
             </div>
 

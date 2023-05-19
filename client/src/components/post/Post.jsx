@@ -1,10 +1,18 @@
 import "./post.css"
 import {Link} from "react-router-dom"
+import {useEffect} from "react"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import React from "react";
 
 export default function Post({post}) {
   const PF = "http://localhost:5000/images/"
+
+  useEffect(()=>{
+    AOS.init({duration: 1500})
+  },[]);
   return (
-    <div className="post">
+    <div className="post" data-AOS="fade-up">
       {post.photo && (
       <img className="postImg" 
       src={PF + post.photo} alt="" 
